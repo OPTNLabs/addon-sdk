@@ -1,0 +1,55 @@
+{
+  "name": "@optnlabs/optn-wallet-addon-sdk",
+  "version": "0.1.0-pre-alpha.0",
+  "private": false,
+  "description": "Dependency-free client contract for OPTN Wallet add-ons.",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OPTNLabs/addon-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OPTNLabs/addon-sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "COMPATIBILITY.md",
+    "MIGRATION.md",
+    "SDK_ARTIFACTS.sha256"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --testTimeout=15000",
+    "format:check": "prettier --check .",
+    "package:check": "node scripts/check-addon-sdk-package.mjs",
+    "artifacts": "node scripts/check-addon-sdk-artifacts.mjs",
+    "artifacts:write": "node scripts/check-addon-sdk-artifacts.mjs --write",
+    "check": "npm run typecheck && npm test && npm run build && npm run package:check && npm run artifacts"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "prettier": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vitest": "^5.0.0"
+  }
+}
