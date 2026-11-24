@@ -1,6 +1,6 @@
 {
   "name": "@optnlabs/optn-wallet-addon-sdk",
-  "version": "0.1.0-pre-alpha.0",
+  "version": "0.1.0-pre-alpha.1",
   "private": false,
   "description": "Dependency-free client contract for OPTN Wallet add-ons.",
   "license": "GPL-3.0-only",

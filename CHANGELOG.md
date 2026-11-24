@@ -2,6 +2,12 @@
 
 All notable changes to the OPTN Wallet add-on SDK will be documented here.
 
+## 0.1.0-pre-alpha.1 — publication metadata correction
+
+- Corrected the published package provenance to point to the standalone
+  `OPTNLabs/addon-sdk` repository.
+- Kept the public API and transport contract unchanged.
+
 ## 0.1.0-pre-alpha.0 — pre-alpha release
 
 - Added the dependency-free typed client and versioned postMessage transport.
@@ -45,8 +51,8 @@ All notable changes to the OPTN Wallet add-on SDK will be documented here.
 - Added explicit operation projection so authority, persistence, and bridge
   responses expose only public operation state and never host-only metadata.
 
-This package is prepared for public publication as a `0.1.0-pre-alpha.0`
-release. The wallet wire/API version exposed by `ADDON_SDK_VERSION` is tracked
+The `0.1.0-pre-alpha.0` release was prepared for public publication. The wallet
+wire/API version exposed by `ADDON_SDK_VERSION` is tracked
 separately as `1.6.0`; the transport protocol remains `1`. The remaining
 security, platform, and dependency findings are accepted follow-up risks for
 this pre-alpha and must not be advertised as completed evidence.

@@ -1,7 +1,7 @@
 # OPTN Wallet add-on SDK
 
 This directory contains the dependency-free client contract for third-party
-OPTN Wallet integrations. The package is currently a `0.1.0-pre-alpha.0`
+OPTN Wallet integrations. The package is currently a `0.1.0-pre-alpha.1`
 public pre-alpha release. Publishing remains a separate owner-controlled
 release action. See
 [`COMPATIBILITY.md`](./COMPATIBILITY.md) and

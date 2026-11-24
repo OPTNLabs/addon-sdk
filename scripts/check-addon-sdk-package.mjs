@@ -39,7 +39,7 @@ if (manifest.private === true) {
     "The public-release SDK package must not retain the private guard",
   );
 }
-if (manifest.version !== "0.1.0-pre-alpha.0") {
+if (manifest.version !== "0.1.0-pre-alpha.1") {
   throw new Error(`Unexpected SDK package version: ${manifest.version}`);
 }
 if (manifest.license !== "GPL-3.0-only") {

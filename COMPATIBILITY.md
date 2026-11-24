@@ -6,7 +6,7 @@ action.
 
 ## Version identifiers
 
-- npm package version: `0.1.0-pre-alpha.0`
+- npm package version: `0.1.0-pre-alpha.1`
 - wallet SDK/API version: `1.6.0`
 - postMessage transport protocol: `1`
 

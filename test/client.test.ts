@@ -524,8 +524,7 @@ describe("addon SDK client", () => {
   it("uses an explicit origin for versioned postMessage transport and rejects mismatched peers", async () => {
     const listeners = new Set<(event: MessageEvent) => void>();
     let posted:
-      | { targetOrigin: string; message: Record<string, unknown> }
-      | undefined;
+      { targetOrigin: string; message: Record<string, unknown> } | undefined;
     const eventTarget = {
       addEventListener: (
         _type: string,
